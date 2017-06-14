@@ -1,10 +1,10 @@
 #!/bin/bash
 
-sudo yum update -y --exclude=kernel
+yum update -y --exclude=kernel
 
-sudo yum install -y vim git unzip screen
+yum install -y vim git unzip screen
 
-sudo yum install -y httpd httpd-devel httpd-tools
+yum install -y httpd httpd-devel httpd-tools
 
 sudo chkconfig --add httpd
 sudo chkconfig httpd on
