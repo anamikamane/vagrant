@@ -23,10 +23,13 @@ sudo service mysqld start
 mysql -u root -e "CREATE DATABASE IF NOT EXISTS dev_test";
 mysql -u root -e "SHOW DATABASES";
 
-service httpd restart
 
 cd vagrant
 
 sudo -u vagrant wget -q https://raw.githubusercontent.com/anamikamane/vagrant/master/file/index.html
 
 sudo -u vagrant wget -q https://raw.githubusercontent.com/anamikamane/vagrant/master/file/info.php
+
+
+service httpd restart
+
